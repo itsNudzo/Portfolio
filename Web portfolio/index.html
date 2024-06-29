@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nudžejm Delanović Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-... " crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Signature.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Nudžejm Delanović</p>
+                <h1>Junior software developer<br> from Bosnia and Herzegovina</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="images/About me.png" alt="">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm passionate software developer, oriented towards backend development, a quick learner and willing 
+                        to put in the hard work and dedication required to succeed. Experienced working in a team of
+                        multiple developers and having open conversations about problems and solutions in development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achivements')">Achivements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>
+                                <div class="programming-languages">
+                                    <div class="img-container">
+                                        <img src="images/CS logo.png">
+                                        <span class="img-title">C#</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/C++ logo.png">
+                                        <span class="img-title">C++</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/Python logo.png">
+                                        <span class="img-title">Python</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/JS logo.png">
+                                        <span class="img-title">JavaScript</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/TS logo.png">
+                                        <span class="img-title">TypeScript</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>Markup and styling</span><br>
+                                <div class="markup">
+                                    <div class="img-container">
+                                        <img src="images/HTML logo.png">
+                                        <span class="img-title">HTML</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/CSS logo.png">
+                                        <span class="img-title">CSS</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>Databases</span><br>
+                                <div class="databases">
+                                    <div class="img-container">
+                                        <img src="images/SQLite logo.png">
+                                        <span class="img-title">SQLite</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/MSSQL logo.png">
+                                        <span class="img-title">MSSQL</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/PostgreSQL logo.png">
+                                        <span class="img-title">PostgreSQL</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>Development tools</span><br>
+                                <div class="dev-tools">
+                                    <div class="img-container">
+                                        <img src="images/GIT logo.png">
+                                        <span class="img-title">Git</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/GITHUB logo.png">
+                                        <span class="img-title">GitHub</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/Postman logo.png">
+                                        <span class="img-title">Postman</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/Swagger logo.png">
+                                        <span class="img-title">Swagger</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/OpenAPI logo.png">
+                                        <span class="img-title">OpenAPI</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>Web services</span><br>
+                                <div class="web-services">
+                                    <div class="img-container">
+                                        <img src="images/CFWorkers logo.png">
+                                        <span class="img-title">Cloudflare Workers</span>
+                                    </div>
+                                    <div class="img-container">
+                                        <img src="images/Wordpress logo.png">
+                                        <span class="img-title">WordPress</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>Testing</span><br>
+                                <div class="testing">
+                                    <div class="img-container">
+                                        <img src="images/XUnit logo.png">
+                                        <span class="img-title">XUnit</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>March 2023 - June 2023</span><br>
+                                C# Backend Developer Intern at UXV CENTER GmbH
+                                <p class="description">
+                                    I worked in C#, used .Net5+ frameworks, learned how to use SOLID principles and a few Design Patterns.<br>
+                                    I also learned how to use MSSQL and PostgreSQL with Entity Framework.<br>
+                                    Focusing on web development I learned Swagger and Postman technologies and
+                                    XUnit testing.<br>
+                                    Working in team I mastered Git usage and finding different solutions for various
+                                    problems.
+                                    <img src="images/UXV POTVRDA 1.png">
+                                    <img src="images/UXV POTVRDA 2.png">
+                                </p>
+                            </li>
+                            <li><span>April 2024 - July 2024</span><br>
+                                Python Developer Intern at Factory of Innovations
+                                <p class="description">
+                                    I worked in Python and Typescript, learned how to use Cloudflare Workers platform and Slack app.<br>
+                                    I have learned aforementioned technologies through parsing HTML.<br> You can see some of those tasks on my GitHub.<br> 
+                                    I have also used Postman for API testing.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>October 2021 - Current</span><br>Software development at Faculty of Information Technologies Mostar</li>
+                            <li><span>November 2021 - January 2022</span><br>C++ programming course at King Fahd Cultural Center Mostar<br>
+                                <img src="images/Programming certification.png">
+                            </li>
+                            <li><span>June 2022</span><br>WordPress course at University Džemal Bijedić of Mostar<br>
+                                <img src="images/WordPress certification.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achivements">
+                        <ul>
+                            <li><span>June 2023</span><br>Winner of FIT Coding Challenge v.16 - Game Development
+                            <p class="description">
+                                Our team "Darksign", using Unity and C#, developed a Souls-like game "When Night Falls" that managed
+                                to secure us first place on FIT Coding Challenge v.16 in category of Game Development.
+                                <img src="images/FIT CC winners.jpeg">
+                                <img src="images/FIT CC diploma.jpeg">
+                            </p>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Mladost app.png">
+                    <div class="layer">
+                        <h3>NK Mladost Management System</h3>
+                        <p>
+                            I developed this app for my local football club.
+                            It enables detailed player record-keeping, swift database searches, and automatic player salary calculation
+                            based on previously defined parameters such as player position and the number of matches played during
+                            a specific period.
+                            This application facilitates club administration and provides transparent management of player salaries.<br>
+                            You can download it from my Github.
+                        </p>
+                        <a href="https://github.com/itsNudzo/Management-System-App"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/When Night Falls game.png">
+                    <div class="layer">
+                        <h3>When Night Falls</h3>
+                        <p>
+                            Our team "Darksign", using Unity and C#, developed a Souls-like game "When Night Falls" that managed
+                            to secure us first place on FIT Coding Challenge v.16 in category of Game Development.<br>
+                            You can download it from the link below.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1K651QsWrPcsOaLHlVbCVe_5zs2MORF-e/view"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Zanat Zona app.png">
+                    <div class="layer">
+                        <h3>Zanat Zona</h3>
+                        <p>
+                            This app is a mix of Instagram, Booking and OLX, designed to connect clients with skilled professionals.
+                            Users can be clients who need some physical work done and professionals such as electricians, plumbers, 
+                            tilers, builders, painters, etc., who will be selling their services.
+                            Through an intuitive and organized interface, users can follow profiles, search for services, and manage
+                            bookings and payments.<br>
+                            The project is still in progress, stay tuned.
+                        </p>
+                        <a href="#" id="ZZ"><i class="fas fa-spinner"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fas fa-envelope"></i> njmdelan@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +38763816277</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/nud%C5%BEejm-delanovi%C4%87-240861241/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/nudzejm.delanovic"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/nudzejmdelan?igsh=MWN2ZTZnbTNsYmpnaA=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="Delanovic Nudzejm - Resume.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nudžejm Delanović 2024</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        document.getElementById("ZZ").addEventListener("click", function(event){
+            event.preventDefault();
+            alert("Coming soon...")
+        })
+
+        var sidemenu = document.getElementById("side-menu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfqc49WJAZ80kMHh_ZVeaBWuP2nVo1rJX1z1dC2Aw4INHYhKmzaS6XbG-Yh262a1PLfg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+
+</body>
+</html>
